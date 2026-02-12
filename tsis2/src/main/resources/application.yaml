@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: TSIS 2
+
+
+mlbb:
+  base-url: https://mlbb-api.onrender.com/api/v1
+

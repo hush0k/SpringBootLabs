@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: TSIS 3
+
+  datasource:
+    url: jdbc:postgresql://localhost:5433/spring_tsis_db
+    username: user
+    password: password
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+

@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: lecture 1
+
+server:
+  port: 8081
