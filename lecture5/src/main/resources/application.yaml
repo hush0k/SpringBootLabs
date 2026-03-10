@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: Lecture 5
+
+  datasource:
+    url: jdbc:postgresql://localhost:5433/lecture4
+    username: user
+    password: password
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true

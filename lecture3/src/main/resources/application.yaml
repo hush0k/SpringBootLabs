@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: Lecture 3
+  datasource:
+    url: jdbc:postgresql://localhost:5433/lecture3
+    username: postgres
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+logging:
+  level:
+    com.zaxxer.hikari: DEBUG
+    org.springframework.jdbc: DEBUG

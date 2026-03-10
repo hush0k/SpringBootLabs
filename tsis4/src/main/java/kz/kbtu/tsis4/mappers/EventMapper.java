@@ -13,9 +13,15 @@ import java.util.List;
 
 @Mapper( componentModel = "spring")
 public interface EventMapper {
+    //EventCreateDto -> Event
     Event toEvent(EventCreateDto dto);
+
+    //Event -> EventResponseDto
     EventResponseDto toResponseDto(Event event);
+
+    //List<Event> -> List<EventResponseDto>
     List<EventResponseDto> toResponseDtoList(List<Event> events);
+
 
     @BeanMapping(nullValuePropertyMappingStrategy = NullValuePropertyMappingStrategy.IGNORE)
     void updateEventDto(EventUpdateDto dto, @MappingTarget Event event);

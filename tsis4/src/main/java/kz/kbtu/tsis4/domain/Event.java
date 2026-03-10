@@ -44,7 +44,6 @@ public class Event {
     @Column(name="updated_at", nullable = false)
     LocalDateTime updatedAt;
 
-
     @PrePersist
     public void prePersist() {
         this.createdAt = LocalDateTime.now();
