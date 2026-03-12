@@ -14,7 +14,7 @@ public class PostKafkaProducer {
     private final KafkaTemplate<String, PostCreatedEvent> kafkaTemplate;
 
     public void sendPostCreateEvent(PostCreatedEvent event) {
-            kafkaTemplate.send("post", event.postId().toString(), event);
+            kafkaTemplate.send("posts", event.postId().toString(), event);
             log.info("Sent PostCreatedEvent for postId: {}", event.postId());
     }
 }
